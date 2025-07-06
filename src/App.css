@@ -1,0 +1,330 @@
+/* General Styles */
+body {
+  background-color: #f0f2f5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Top Section Layout */
+.top-section {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Panels */
+.panel {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  flex: 1;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 1rem;
+  min-height: 44px;
+}
+
+.panel-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.upload-btn {
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Item Lists */
+.item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.list-item:last-child {
+  border-bottom: none;
+}
+.list-item input[type="checkbox"] {
+  margin-right: 1rem;
+  width: 16px;
+  height: 16px;
+}
+
+/* Image Item Specifics */
+.image-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.image-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 180px;
+}
+
+.checkmark {
+  margin-left: auto;
+  margin-right: 10px;
+  color: #28a745;
+  font-weight: bold;
+}
+
+
+/* Start Button */
+.start-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto 2rem auto;
+}
+.start-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Results Panel */
+.results-panel {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+.results-panel h2 {
+   margin-top: 0;
+}
+
+.result-group {
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+.result-group:last-child {
+  border-bottom: none;
+}
+
+.result-image-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 100px;
+}
+
+.result-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.image-thumb {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.result-details {
+  flex-grow: 1;
+}
+
+.result-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.result-btn {
+  background-color: white;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.main-header {
+  width: 100%;
+  height: 64px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.logo-text {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #000;
+}
+
+body {
+  padding-top: 84px;
+}
+
+.model-panel {
+  flex: 0 0 30%;
+}
+
+.panel:not(.model-panel) {
+  flex: 1;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 5px;
+  padding: 0;
+  line-height: 1;
+}
+.delete-btn:hover {
+  color: #000000;
+}
+
+.upload-panel .item-list {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.upload-panel .item-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.upload-panel .item-list::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.upload-panel .item-list::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.model-panel .item-list {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.model-panel .item-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.model-panel .item-list::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.model-panel .item-list::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.progress-bar-container {
+  width: 100%;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0;
+  height: 24px;
+  position: relative;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 0.3s ease;
+}
+
+.progress-bar-container span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  line-height: 24px;
+  color: #000;
+}
+
+.label-glioma {
+  background-color: #1e3f99; 
+  color: white;
+}
+
+.label-meningioma {
+  background-color: #03a1b9 ;
+  color: white;
+}
+
+.label-pituitary {
+  background-color: #9a2828;
+  color: white;
+}
+
+.label-notumor {
+  background-color: #519a27;
+  color: white;
+}
+
+.label-default {
+  background-color: #d9d9d9;
+  color: black;
+}
